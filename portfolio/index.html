@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- TODO: replace "Your Consultancy" everywhere with your business name -->
+  <title>Your Consultancy — Accessibility audits, training and inclusive design</title>
+  <meta name="description" content="Accessibility consultancy helping teams build digital products that work for everyone. WCAG audits, remediation support, training and inclusive design reviews.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Your Consultancy, home">
+        <span class="logo-mark" aria-hidden="true">◐</span>
+        <span class="logo-text">Your Consultancy</span>
+      </a>
+      <nav aria-label="Main">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+          Menu
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a class="nav-cta" href="#contact">Get in touch</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="eyebrow">Digital accessibility consultancy</p>
+        <h1 id="hero-title">Build products that work for <em>everyone</em>.</h1>
+        <p class="lead">
+          We help product teams find, fix and prevent accessibility barriers — so your
+          websites and apps are usable by people with disabilities, and compliant with
+          WCAG&nbsp;2.2, the European Accessibility Act and the ADA.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">Book a free consultation</a>
+          <a class="button button-secondary" href="#work">See our work</a>
+        </div>
+        <ul class="stats" aria-label="Key figures">
+          <!-- TODO: replace with your real numbers -->
+          <li><strong>120+</strong> audits delivered</li>
+          <li><strong>40+</strong> clients across 8 countries</li>
+          <li><strong>1,500</strong> people trained</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title">Services</h2>
+        <p class="section-intro">From a one-off audit to embedding accessibility in how your team works.</p>
+        <!-- TODO: replace with your service list -->
+        <ul class="card-grid" role="list">
+          <li class="card">
+            <h3>Accessibility audits</h3>
+            <p>Expert manual and assistive-technology testing against WCAG 2.2 AA, with a prioritised report your developers can act on.</p>
+          </li>
+          <li class="card">
+            <h3>Remediation support</h3>
+            <p>Hands-on help fixing issues: code reviews, pairing sessions and re-testing until barriers are gone.</p>
+          </li>
+          <li class="card">
+            <h3>Inclusive design reviews</h3>
+            <p>Catch problems before they're built. We review designs, prototypes and design systems for accessibility.</p>
+          </li>
+          <li class="card">
+            <h3>Training &amp; workshops</h3>
+            <p>Role-based training for developers, designers, content editors and product owners — remote or on site.</p>
+          </li>
+          <li class="card">
+            <h3>User testing with disabled people</h3>
+            <p>Research sessions with screen reader, magnification, voice control and keyboard-only users.</p>
+          </li>
+          <li class="card">
+            <h3>Compliance &amp; statements</h3>
+            <p>Accessibility statements, VPATs / ACRs and guidance on the European Accessibility Act and procurement.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Work / case studies -->
+    <section id="work" class="section section-alt" aria-labelledby="work-title">
+      <div class="container">
+        <h2 id="work-title">Selected work</h2>
+        <p class="section-intro">A few projects where accessibility made a measurable difference.</p>
+        <!-- TODO: replace with your case studies. Duplicate work/case-study.html for each one. -->
+        <ul class="case-list" role="list">
+          <li class="case">
+            <p class="case-meta">E-commerce · Audit &amp; remediation</p>
+            <h3><a href="work/case-study.html">Making checkout usable for screen reader users</a></h3>
+            <p>A national retailer's checkout was blocking keyboard and screen reader users. We audited the full purchase flow and paired with the team on fixes.</p>
+            <p class="case-result"><strong>Result:</strong> 94% fewer critical issues and a 12% lift in checkout completion.</p>
+          </li>
+          <li class="case">
+            <p class="case-meta">Public sector · Training</p>
+            <h3><a href="work/case-study.html">Accessibility training for a municipal digital team</a></h3>
+            <p>A six-week programme for 60 developers, designers and editors, tailored to their CMS and component library.</p>
+            <p class="case-result"><strong>Result:</strong> New pages now pass WCAG 2.2 AA at launch.</p>
+          </li>
+          <li class="case">
+            <p class="case-meta">SaaS · Design system review</p>
+            <h3><a href="work/case-study.html">An accessible foundation for a B2B design system</a></h3>
+            <p>We reviewed 45 components, rewrote interaction patterns and documented accessibility guidance for each one.</p>
+            <p class="case-result"><strong>Result:</strong> Every product built on the system inherits accessible components.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section id="approach" class="section" aria-labelledby="approach-title">
+      <div class="container">
+        <h2 id="approach-title">How we work</h2>
+        <ol class="steps">
+          <li>
+            <h3>Understand</h3>
+            <p>We learn about your product, users, deadlines and legal obligations.</p>
+          </li>
+          <li>
+            <h3>Test</h3>
+            <p>Manual testing with real assistive technology, backed by automated checks.</p>
+          </li>
+          <li>
+            <h3>Fix</h3>
+            <p>Clear, prioritised findings with code examples — and support while you fix.</p>
+          </li>
+          <li>
+            <h3>Sustain</h3>
+            <p>Training, processes and checklists so accessibility stays part of how you build.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="section section-alt" aria-labelledby="testimonial-title">
+      <div class="container">
+        <h2 id="testimonial-title" class="visually-hidden">What clients say</h2>
+        <!-- TODO: replace with a real client quote (with permission) -->
+        <figure class="quote">
+          <blockquote>
+            <p>“They didn't just hand us a report — they taught our team how to think about accessibility. It's now part of our definition of done.”</p>
+          </blockquote>
+          <figcaption>— Client Name, Head of Product at Company</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container about">
+        <div>
+          <h2 id="about-title">About</h2>
+          <!-- TODO: write your own story -->
+          <p>Your Consultancy was founded on a simple belief: the web should be usable by everyone. We are certified accessibility specialists (IAAP CPACC / WAS) with backgrounds in front-end development, UX design and assistive technology.</p>
+          <p>We work with startups, agencies, public sector organisations and global brands — and we always aim to leave your team more capable than we found it.</p>
+        </div>
+        <ul class="badges" aria-label="Certifications and standards">
+          <li>WCAG 2.2</li>
+          <li>EN 301 549</li>
+          <li>European Accessibility Act</li>
+          <li>IAAP certified</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div>
+          <h2 id="contact-title">Let's talk</h2>
+          <p>Tell us a little about your project and we'll get back to you within two working days.</p>
+          <!-- TODO: your real contact details -->
+          <p>Or email us directly at <a href="mailto:hello@example.com">hello@example.com</a>.</p>
+        </div>
+
+        <!-- TODO: set action to your form endpoint (e.g. Formspree, Netlify Forms) -->
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="post" novalidate>
+          <div class="error-summary" role="alert" tabindex="-1" hidden>
+            <h3>There is a problem</h3>
+            <ul></ul>
+          </div>
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="company">Organisation <span class="optional">(optional)</span></label>
+            <input id="company" name="company" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="service">What do you need help with?</label>
+            <select id="service" name="service">
+              <option>Not sure yet</option>
+              <option>Accessibility audit</option>
+              <option>Remediation support</option>
+              <option>Design review</option>
+              <option>Training</option>
+              <option>User testing</option>
+              <option>Compliance / VPAT</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="button button-primary" type="submit">Send message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> Your Consultancy</p>
+      <ul>
+        <li><a href="accessibility.html">Accessibility statement</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

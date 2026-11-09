@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- TEMPLATE: duplicate this file for each case study -->
+  <title>Making checkout usable for screen reader users — Your Consultancy</title>
+  <meta name="description" content="Case study: how an accessibility audit and remediation support improved checkout completion for a national retailer.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html" aria-label="Your Consultancy, home">
+        <span class="logo-mark" aria-hidden="true">◐</span>
+        <span class="logo-text">Your Consultancy</span>
+      </a>
+      <nav aria-label="Main">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+          Menu
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#work" aria-current="true">Work</a></li>
+          <li><a href="../index.html#approach">Approach</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a class="nav-cta" href="../index.html#contact">Get in touch</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1" class="page">
+    <article class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#work">Work</a></li>
+          <li><a href="case-study.html" aria-current="page">Checkout accessibility</a></li>
+        </ol>
+      </nav>
+
+      <div class="prose">
+        <p class="eyebrow">Case study · E-commerce</p>
+        <h1>Making checkout usable for screen reader users</h1>
+        <p class="lead">A national retailer was losing customers at the final step. We found out why — and helped fix it.</p>
+
+        <dl class="facts">
+          <div><dt>Client</dt><dd>National retailer</dd></div>
+          <div><dt>Services</dt><dd>Audit, remediation support</dd></div>
+          <div><dt>Duration</dt><dd>10 weeks</dd></div>
+          <div><dt>Standard</dt><dd>WCAG 2.2 AA</dd></div>
+        </dl>
+
+        <h2>The challenge</h2>
+        <p>Customer support was receiving complaints from blind and low-vision customers who couldn't complete purchases. The checkout had been rebuilt in a JavaScript framework without accessibility testing.</p>
+
+        <h2>What we did</h2>
+        <ul>
+          <li>Tested the full purchase journey with NVDA, JAWS, VoiceOver and keyboard only.</li>
+          <li>Logged 87 issues, each with severity, affected users and a code-level fix.</li>
+          <li>Ran weekly pairing sessions with the front-end team.</li>
+          <li>Ran usability sessions with five screen reader users to validate the fixes.</li>
+        </ul>
+
+        <h2>Key barriers found</h2>
+        <ul>
+          <li>Custom address dropdown couldn't be operated by keyboard.</li>
+          <li>Form errors were shown only in red, with no text announcement.</li>
+          <li>Payment iframe trapped keyboard focus.</li>
+          <li>Session timeout gave no warning or way to extend.</li>
+        </ul>
+
+        <h2>Results</h2>
+        <ul>
+          <li><strong>94%</strong> reduction in critical issues.</li>
+          <li><strong>12%</strong> increase in checkout completion across all users.</li>
+          <li>Accessibility checks added to the team's pull request template.</li>
+        </ul>
+
+        <figure class="quote" style="text-align:left;margin-top:3rem">
+          <blockquote>
+            <p>“Fixing accessibility made our checkout better for everyone.”</p>
+          </blockquote>
+          <figcaption>— Client Name, Engineering Lead</figcaption>
+        </figure>
+
+        <p style="margin-top:3rem"><a class="button button-primary" href="../index.html#contact">Start a similar project</a></p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> Your Consultancy</p>
+      <ul>
+        <li><a href="../accessibility.html">Accessibility statement</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
