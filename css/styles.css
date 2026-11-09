@@ -314,6 +314,9 @@ main:focus { outline: none; }
 .case h3 a::after { content: ""; position: absolute; inset: 0; }
 .case-meta { font-size: 0.95rem; font-weight: 700; color: var(--accent); margin-bottom: 0.5rem; }
 .case-result { margin: 0; }
+.case-image { margin: 1.5rem 0 0; }
+.case-image img { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: 0.5rem; }
+.case-image figcaption { margin-top: 0.5rem; color: var(--text-muted); font-size: 0.95rem; }
 
 /* Steps */
 .steps {

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessibility statement — Your Consultancy</title>
+  <meta name="description" content="Accessibility statement for the Your Consultancy website.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Your Consultancy, home">
+        <span class="logo-mark" aria-hidden="true">◐</span>
+        <span class="logo-text">Simpleaccessible</span>
+      </a>
+      <nav aria-label="Main">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+          Menu
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="index.html#approach">Approach</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a class="nav-cta" href="index.html#contact">Get in touch</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1" class="page">
+    <div class="container prose">
+      <h1>Accessibility statement</h1>
+      <!-- TODO: update the dates after you have tested the live site -->
+      <p>We want everyone to be able to use this website. As an accessibility consultancy, we hold ourselves to the same standard we recommend to our clients.</p>
+
+      <h2>Conformance status</h2>
+      <p>This website aims to conform to the <a href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines (WCAG) 2.2</a> at level AA, and to level AAA where practical.</p>
+
+      <h2>What we've done</h2>
+      <ul>
+        <li>Semantic HTML with landmarks, a logical heading structure and a skip link.</li>
+        <li>Text and interface colours that meet at least WCAG AA contrast, in both light and dark mode.</li>
+        <li>A clearly visible focus indicator for keyboard users.</li>
+        <li>Content that reflows to 400% zoom and works in portrait and landscape.</li>
+        <li>Respect for your reduced-motion and high-contrast (forced colours) settings.</li>
+        <li>Form fields with visible labels, autocomplete and clear error messages.</li>
+        <li>The Atkinson Hyperlegible typeface, designed for readers with low vision.</li>
+        <li>Everything works without JavaScript.</li>
+      </ul>
+
+      <h2>How we tested</h2>
+      <p>This site was last tested on <time datetime="2026-10-26">26 October 2026</time> using:</p>
+      <ul>
+        <li>NVDA with Firefox and Chrome on Windows</li>
+        <li>VoiceOver with Safari on macOS and iOS</li>
+        <li>TalkBack with Chrome on Android</li>
+        <li>Keyboard only, browser zoom up to 400% and Windows High Contrast</li>
+        <li>Automated checks with axe DevTools and Lighthouse</li>
+      </ul>
+
+      <h2>Known limitations</h2>
+      <p>We are not currently aware of any accessibility barriers on this website. If you find one, please let us know.</p>
+
+      <h2>Feedback</h2>
+      <p>If you have trouble using any part of this site, email <a href="mailto:hello@example.com">hello@example.com</a>. We aim to respond within two working days.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> Your Consultancy</p>
+      <ul>
+        <li><a href="accessibility.html" aria-current="page">Accessibility statement</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
